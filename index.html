@@ -168,6 +168,15 @@
           accept: "video/mp4,video/quicktime,.mp4,.mov,.m4v",
           multiple: true,
         },
+        // What the expert's cabinet asks since 12.10: every type the server
+        // takes, spelled out, and no «video/*».
+        {
+          id: "full",
+          name: "Как в правке кабинета",
+          accept:
+            "video/mp4,video/quicktime,video/x-m4v,video/webm,video/x-matroska,video/x-msvideo,video/3gpp,video/mp2t,.mp4,.mov,.m4v,.webm,.mkv,.avi,.3gp,.mts,.m2ts",
+          multiple: true,
+        },
       ];
 
       const CHUNK = 8 * 1024 * 1024;
